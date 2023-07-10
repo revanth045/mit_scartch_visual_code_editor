@@ -5,10 +5,10 @@ import RedoIcon from "@material-ui/icons/Redo";
 import Paper from "@material-ui/core/Paper";
 
 const TurnClockWise = ({ character, characterAngle, comp_id }) => {
-  const [angle, setAngle] = useState(0);
 
   // handle turn clockwise component
   const handleClick = () => {
+    let angle = 180;
     const el = document.getElementById(character.active);
     const character_angle = character.characters.find(
       (x) => x.id === character.active
@@ -23,13 +23,6 @@ const TurnClockWise = ({ character, characterAngle, comp_id }) => {
     <Paper elevation={3}>
       <div className="text-center rounded bg-blue-500 p-2 my-3">
         <div className="grid grid-cols-2">
-          <div className="text-white">Rotate By:</div>
-          <input
-            className="mx-2 p-1 py-0 text-center"
-            type="number"
-            value={angle}
-            onChange={(e) => setAngle(parseInt(e.target.value))}
-          />
         </div>
         <div
           id={comp_id}
@@ -37,8 +30,7 @@ const TurnClockWise = ({ character, characterAngle, comp_id }) => {
           onClick={() => handleClick()}
         >
           <div className="flex mx-auto">
-            Turn
-            <RedoIcon className="mx-2" /> {angle} degrees
+            SemiCircle
           </div>
         </div>
       </div>

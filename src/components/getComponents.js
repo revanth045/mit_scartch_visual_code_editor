@@ -1,17 +1,17 @@
 import React from "react";
-import Move from "./motion/Move";
-import TurnAntiClockwise from "./motion/TurnAntiClockwise";
-import TurnClockwise from "./motion/TurnClockwise";
-import GotoXY from "./motion/Goto";
-import SayMessage from "./looks/SayMessage";
-import SayMessageWithTimer from "./looks/SayMessageWithTimer";
-import Size from "./looks/Size";
-import Show from "./looks/Show";
-import Hide from "./looks/Hide";
-import HideMessage from "./looks/HideMessage";
-import MoveY from "./motion/MoveY";
-import Think from "./looks/Think";
-import ThinkWithTimer from "./looks/ThinkWithTimer";
+import Move from "./sprite_motion/Move";
+import TurnAntiClockwise from "./sprite_motion/TurnAntiClockwise";
+import TurnClockwise from "./sprite_motion/TurnClockwise";
+import GotoXY from "./sprite_motion/Goto";
+import SayMessage from "./sprite_looks/SayMessage";
+import SayMessageWithTimer from "./sprite_looks/SayMessageWithTimer";
+import Size from "./sprite_looks/Size";
+import Show from "./sprite_looks/Show";
+import Hide from "./sprite_looks/Hide";
+import HideMessage from "./sprite_looks/HideMessage";
+import MoveY from "./sprite_motion/MoveY";
+import Think from "./sprite_looks/Think";
+import ThinkWithTimer from "./sprite_looks/ThinkWithTimer";
 
 // fetch components based on different keys
 export const getComponent = (key, id) => {
