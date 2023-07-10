@@ -8,11 +8,8 @@ import SayMessageWithTimer from "./looks/SayMessageWithTimer";
 import Size from "./looks/Size";
 import Show from "./looks/Show";
 import Hide from "./looks/Hide";
-import Wait from "./control/Wait";
-import Repeat from "./control/Repeat";
 import HideMessage from "./looks/HideMessage";
 import MoveY from "./motion/MoveY";
-import BroadcastMessage from "./events/broadcast";
 import Think from "./looks/Think";
 import ThinkWithTimer from "./looks/ThinkWithTimer";
 
